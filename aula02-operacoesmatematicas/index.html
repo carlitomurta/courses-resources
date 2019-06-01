@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Curso Javascript</title>
+	</head>
+
+	<body>
+		<script>
+			/* SOMA NUMERO*/
+			var x = 10,
+				y = 5; // e possivel declarar variaveis na mesma linha
+
+			var soma = x + y;
+
+			console.log(soma); // 15
+
+			/* SOMA STRING */
+			var x = '10',
+				y = 5;
+
+			var soma2 = x + y; // apesar de termos tipagem dinamica, o javascript nao entendi uma soma de string + integer
+
+			console.log(soma2); // 105
+
+			/* SOMA COM REITERACAO */
+			var x = 1;
+			x += 1;
+
+			console.log(x); // 2
+
+			/* CONCATENACAO DE STRINGS */
+			var x = 3;
+
+			console.log('x = ' + x); // x = 3
+		</script>
+	</body>
+</html>

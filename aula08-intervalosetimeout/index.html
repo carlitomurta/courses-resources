@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Curso Javascript</title>
+	</head>
+
+	<body>
+		<script>
+			function exibirFlakes() {
+				console.log('Flaws and Flakes');
+			}
+
+			setInterval(exibirFlakes, 1000);
+			// Flaws and Flakes - 1s
+			// Flaws and Flakes - 2s
+			// Flaws and Flakes - 3s
+			// Flaws and Flakes - 4s
+
+			setTimeout(exibirFlakes, 5000);
+			// Flaws and Flakes - 5s
+			// Parou!
+		</script>
+	</body>
+</html>

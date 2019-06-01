@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Curso Javascript</title>
+	</head>
+
+	<body>
+		<script>
+			/**
+			      * ! Errado
+			      * ? if(cambio = 'R$')
+			      * O javascript entende como igualdade o operador "==", neste caso voce esta tentando iterar a variavel com o valor 'R$'
+
+			      * * if(cambio === 'R$')
+			      * O operador === testa tanto o valor quando o tipo da variavel, apesar do javascript nao ter tipos estaticos.
+			      */
+
+			/* declarando uma funcao */
+			function retornaCambio(cambio) {
+				if (1 == '1') {
+				} // true
+
+				if (1 === '1') {
+				} // false
+
+				/* CASO 1 */
+				if (cambio === 'R$') {
+					return 'Real';
+				} else {
+					return 'Outra moeda';
+				}
+				/* CASO 2 */
+				if (cambio === 'R$') {
+					return 'Real';
+				} else if (cambio === '$') {
+					return 'Dolar';
+				} else if (cambio === '£') {
+					return 'Libra esterlina';
+				} else {
+					return 'Outra moeda';
+				}
+
+				/* SWITCH CASE */
+				switch (cambio) {
+					case 'R$':
+						return 'Real';
+					case '$':
+						return 'Dolar';
+					case '£':
+						return 'Libra esterlina';
+					default:
+						return 'Outra moeda';
+				}
+			}
+
+			var resultado = retornaCambio('R$');
+
+			console.log(resultado); // "Real"
+		</script>
+	</body>
+</html>
